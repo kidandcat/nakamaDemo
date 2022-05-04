@@ -1,0 +1,8 @@
+logger:
+    level: DEBUG
+
+name: nakama-node-1
+console:
+    port: 7351
+    username: "my_user"
+    password: "my_password"
