@@ -5,9 +5,9 @@ ENV CGO_ENABLED 1
 
 WORKDIR /backend
 
-COPY go.mod .
-COPY main.go .
-COPY vendor/ vendor/
+COPY custom/go.mod .
+COPY custom/main.go .
+COPY custom/vendor/ vendor/
 
 RUN go build --trimpath --mod=vendor --buildmode=plugin -o ./backend.so
 
